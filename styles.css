@@ -1,0 +1,70 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #2F2F2F; /* Updated background color */
+    font-family: "Source Sans Pro", sans-serif;
+    color: #9C9686; /* Updated foreground color */
+}
+
+/* Glassy container styling */
+.container {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(47, 47, 47, 0.8); /* Darker background with slight transparency */
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transform-style: preserve-3d;
+    position: relative;
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.1s ease-out, box-shadow 0.1s ease-out;
+}
+
+/* Loading Spinner */
+.loading {
+    font-size: 20px;
+    color: #9C9686; /* Updated loading spinner color */
+    margin-bottom: 20px;
+}
+
+/* Glassy elements */
+#ip, #country-name, #ip-time, #browser-time {
+    font-size: 16px;
+    line-height: 1.5;
+    background: rgba(47, 47, 47, 0.9); /* Darker background for these elements */
+    padding: 10px;
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+    margin: 10px 0;
+    color: #9C9686; /* Updated foreground color */
+}
+
+/* Country Info */
+#country-info {
+    margin-top: 20px;
+}
+
+/* Map container */
+#map {
+    margin-top: 20px;
+    height: 400px;
+    width: 100%;
+    border: 1px solid #9C9686; /* Lighter border to match the foreground */
+    border-radius: 5px;
+}
+
+/* Flag styling */
+#country-flag {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Text 

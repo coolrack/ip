@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>~/coolrack</title>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6BL6K9FVQE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-6BL6K9FVQE');
+    </script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Leaflet CSS for the map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #2F2F2F;
+            color: #9C9686;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+            padding: 20px;
+            background: #57504E; /* Updated background color */
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+        }
+        .loading {
+            font-size: 18px;
+            color: #9C9686;
+        }
+        .ip-address, #country-name, #browser-time, #ip-time {
+            margin: 10px 0;
+        }
+        #country-flag {
+            margin: 10px auto;
+            width: 120px;
+            border-radius: 8px;
+        }
+        #map {
+            height: 400px;
+            margin-top: 20px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Loading Spinner -->
+        <div id="loading" class="loading">Loading...</div>
+
+        <!-- IP Address Information -->
+        <div id="ip" class="ip-address">Loading...</div>
+
+        <!-- Flag and Country Info -->
+        <div id="country-info">
+            <img id="country-flag" src="" alt="Country Flag">
+            <div id="country-name">Loading Country...</div>
+        </div>
+
+        <!-- IP Time and Browser Time Comparison -->
+        <div id="time-comparison">
+            <div id="ip-time">Loading IP Time...</div>
+            <div id="browser-time">Browser Time: Loading...</div>
+        </div>
+
+        <!-- Map container -->
+        <div id="map"></div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+    <!-- Leaflet JS for the map -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</body>
+</html>
